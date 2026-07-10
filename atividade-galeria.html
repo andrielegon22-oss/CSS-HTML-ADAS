@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .principal {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            height: 700px;
+            background-color: rgb(196, 152, 96);
+        }
+
+        .card {
+            width: 100%;
+            padding: 30px;
+            border: solid 10px rgb(22, 77, 22);
+            text-align: center;
+        }
+        @media (min-width 500px) {
+            .principal {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        @media (min-width 900px) {
+            .principal {
+                grid-template-columns: repeat(3,1fr);
+            }
+        }
+        @media (min-width 1200px) {
+            .principal {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Galeria de personagens</h1>
+    <div class="principal">
+
+        <div class="card">
+            <img src="https://i.pinimg.com/1200x/59/24/95/592495a39291d7ef42267e7a2941f767.jpg" alt="CORAGEM O CÃO COVARDE">
+        </div>
+        <div class="card">
+            <img src="https://static.wikia.nocookie.net/dublagem/images/7/70/Pink-Panther-and-Pals-takes-over-Cartoon-Networks-Boomerang.jpg/revision/latest/scale-to-width/360?cb=20240130110754&path-prefix=pt-br" alt="PANTERA COR DE ROSA">
+        </div>
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdA-B1w9F05yfjEjZziT7m69OSgXlFWFWVhQb1IGtTLmUPgnZRevELJ18&s=10" alt="TOM E JERRY">
+        </div>
+    </div>
+</body>
+
+</html>
